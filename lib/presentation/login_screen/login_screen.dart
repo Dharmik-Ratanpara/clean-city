@@ -1,8 +1,6 @@
 import 'controller/login_controller.dart';
 import 'package:clean_city/core/app_export.dart';
 import 'package:clean_city/core/utils/validation_functions.dart';
-import 'package:clean_city/widgets/app_bar/appbar_image.dart';
-import 'package:clean_city/widgets/app_bar/custom_app_bar.dart';
 import 'package:clean_city/widgets/custom_button.dart';
 import 'package:clean_city/widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
@@ -26,51 +24,18 @@ class LoginScreen extends GetWidget<LoginController> {
                       Align(
                           alignment: Alignment.center,
                           child: Container(
+                              padding: getPadding(
+                                  left: 88, top: 192, right: 88, bottom: 192),
                               decoration: AppDecoration.fillYellow400,
                               child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   children: [
-                                    CustomAppBar(
-                                        height: getVerticalSize(32),
-                                        leadingWidth: 41,
-                                        leading: AppbarImage(
-                                            height: getVerticalSize(9),
-                                            width: getHorizontalSize(25),
-                                            svgPath: ImageConstant.imgShare,
-                                            margin: getMargin(
-                                                left: 16, top: 12, bottom: 11)),
-                                        actions: [
-                                          AppbarImage(
-                                              height: getVerticalSize(8),
-                                              width: getHorizontalSize(14),
-                                              svgPath: ImageConstant.imgSignal,
-                                              margin: getMargin(
-                                                  left: 16,
-                                                  top: 12,
-                                                  right: 12)),
-                                          AppbarImage(
-                                              height: getVerticalSize(9),
-                                              width: getHorizontalSize(12),
-                                              svgPath: ImageConstant
-                                                  .imgSignalGray900,
-                                              margin: getMargin(
-                                                  left: 8, top: 11, right: 12)),
-                                          AppbarImage(
-                                              height: getVerticalSize(9),
-                                              width: getHorizontalSize(20),
-                                              svgPath:
-                                                  ImageConstant.imgComputer,
-                                              margin: getMargin(
-                                                  left: 9, top: 11, right: 28))
-                                        ],
-                                        styleType: Style.bgFillWhiteA700),
-                                    Spacer(),
                                     CustomImageView(
                                         svgPath: ImageConstant.imgGroup11061,
                                         height: getVerticalSize(136),
                                         width: getHorizontalSize(183),
-                                        margin: getMargin(bottom: 472))
+                                        margin: getMargin(bottom: 280))
                                   ]))),
                       Align(
                           alignment: Alignment.bottomCenter,
@@ -129,9 +94,6 @@ class LoginScreen extends GetWidget<LoginController> {
                                         height: getVerticalSize(48),
                                         text: "lbl_next".tr,
                                         margin: getMargin(left: 4, top: 16),
-                                        variant: ButtonVariant.FillTeal900,
-                                        fontStyle:
-                                            ButtonFontStyle.UrbanistMedium16,
                                         onTap: () {
                                           onTapNext();
                                         }),

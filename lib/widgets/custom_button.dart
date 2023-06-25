@@ -109,10 +109,10 @@ class CustomButton extends StatelessWidget {
 
   _setColor() {
     switch (variant) {
-      case ButtonVariant.FillTeal900:
-        return ColorConstant.teal900;
-      default:
+      case ButtonVariant.FillYellow400:
         return ColorConstant.yellow400;
+      default:
+        return ColorConstant.teal900;
     }
   }
 
@@ -131,16 +131,7 @@ class CustomButton extends StatelessWidget {
 
   _setFontStyle() {
     switch (fontStyle) {
-      case ButtonFontStyle.UrbanistMedium16:
-        return TextStyle(
-          color: ColorConstant.whiteA700,
-          fontSize: getFontSize(
-            16,
-          ),
-          fontFamily: 'Urbanist',
-          fontWeight: FontWeight.w500,
-        );
-      default:
+      case ButtonFontStyle.UrbanistSemiBold16:
         return TextStyle(
           color: ColorConstant.gray900,
           fontSize: getFontSize(
@@ -148,6 +139,15 @@ class CustomButton extends StatelessWidget {
           ),
           fontFamily: 'Urbanist',
           fontWeight: FontWeight.w600,
+        );
+      default:
+        return TextStyle(
+          color: ColorConstant.whiteA700,
+          fontSize: getFontSize(
+            16,
+          ),
+          fontFamily: 'Urbanist',
+          fontWeight: FontWeight.w500,
         );
     }
   }
@@ -163,11 +163,11 @@ enum ButtonPadding {
 }
 
 enum ButtonVariant {
-  FillYellow400,
   FillTeal900,
+  FillYellow400,
 }
 
 enum ButtonFontStyle {
-  UrbanistSemiBold16,
   UrbanistMedium16,
+  UrbanistSemiBold16,
 }

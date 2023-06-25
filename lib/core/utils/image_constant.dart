@@ -18,11 +18,9 @@ class ImageConstant {
 
   static String imgMenu = 'assets/images/img_menu.svg';
 
-  static String imgShare = 'assets/images/img_share.svg';
-
   static String imgClock = 'assets/images/img_clock.svg';
 
-  static String imgGroup9 = 'assets/images/img_group9.svg';
+  static String imgGroup81 = 'assets/images/img_group81.svg';
 
   static String imgArrowright = 'assets/images/img_arrowright.svg';
 
@@ -42,8 +40,6 @@ class ImageConstant {
   static String imgIconsaxbulkdirectupBlack90024x24 =
       'assets/images/img_iconsaxbulkdirectup_black_900_24x24.svg';
 
-  static String imgSignal = 'assets/images/img_signal.svg';
-
   static String imgGroup1066 = 'assets/images/img_group1066.png';
 
   static String imgRectangle638 = 'assets/images/img_rectangle638.png';
@@ -51,10 +47,6 @@ class ImageConstant {
   static String imgSearch = 'assets/images/img_search.svg';
 
   static String imgEdit = 'assets/images/img_edit.svg';
-
-  static String imgSignalGray900 = 'assets/images/img_signal_gray_900.svg';
-
-  static String imgComputer = 'assets/images/img_computer.svg';
 
   static String imgPlusmath20x20 = 'assets/images/img_plusmath_20x20.png';
 

@@ -1,13 +1,13 @@
-import 'controller/home_container_controller.dart';
+import 'controller/home_container1_controller.dart';
 import 'package:clean_city/core/app_export.dart';
 import 'package:clean_city/presentation/history_user_page/history_user_page.dart';
-import 'package:clean_city/presentation/home_page/home_page.dart';
+import 'package:clean_city/presentation/home_container_page/home_container_page.dart';
 import 'package:clean_city/presentation/profile_page/profile_page.dart';
 import 'package:clean_city/presentation/upload_page/upload_page.dart';
 import 'package:clean_city/widgets/custom_bottom_bar.dart';
 import 'package:flutter/material.dart';
 
-class HomeContainerScreen extends GetWidget<HomeContainerController> {
+class HomeContainer1Screen extends GetWidget<HomeContainer1Controller> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -15,7 +15,7 @@ class HomeContainerScreen extends GetWidget<HomeContainerController> {
             backgroundColor: ColorConstant.whiteA700,
             body: Navigator(
                 key: Get.nestedKey(1),
-                initialRoute: AppRoutes.homePage,
+                initialRoute: AppRoutes.homeContainerPage,
                 onGenerateRoute: (routeSetting) => GetPageRoute(
                     page: () => getCurrentPage(routeSetting.name!),
                     transition: Transition.noTransition)),
@@ -29,7 +29,7 @@ class HomeContainerScreen extends GetWidget<HomeContainerController> {
   String getCurrentRoute(BottomBarEnum type) {
     switch (type) {
       case BottomBarEnum.Home:
-        return AppRoutes.homePage;
+        return AppRoutes.homeContainerPage;
       case BottomBarEnum.Post:
         return AppRoutes.uploadPage;
       case BottomBarEnum.History:
@@ -44,8 +44,8 @@ class HomeContainerScreen extends GetWidget<HomeContainerController> {
   ///Handling page based on route
   Widget getCurrentPage(String currentRoute) {
     switch (currentRoute) {
-      case AppRoutes.homePage:
-        return HomePage();
+      case AppRoutes.homeContainerPage:
+        return HomeContainerPage();
       case AppRoutes.uploadPage:
         return UploadPage();
       case AppRoutes.historyUserPage:

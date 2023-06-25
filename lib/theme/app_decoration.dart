@@ -23,24 +23,6 @@ class AppDecoration {
           ),
         ),
       );
-  static BoxDecoration get outlineBlack9000a => BoxDecoration(
-        color: ColorConstant.whiteA700,
-        boxShadow: [
-          BoxShadow(
-            color: ColorConstant.black9000a,
-            spreadRadius: getHorizontalSize(
-              2,
-            ),
-            blurRadius: getHorizontalSize(
-              2,
-            ),
-            offset: Offset(
-              0,
-              0,
-            ),
-          ),
-        ],
-      );
   static BoxDecoration get fillYellow400 => BoxDecoration(
         color: ColorConstant.yellow400,
       );
@@ -80,6 +62,12 @@ class AppDecoration {
 }
 
 class BorderRadiusStyle {
+  static BorderRadius roundedBorder8 = BorderRadius.circular(
+    getHorizontalSize(
+      8,
+    ),
+  );
+
   static BorderRadius customBorderBL15 = BorderRadius.only(
     bottomLeft: Radius.circular(
       getHorizontalSize(
@@ -90,12 +78,6 @@ class BorderRadiusStyle {
       getHorizontalSize(
         15,
       ),
-    ),
-  );
-
-  static BorderRadius roundedBorder8 = BorderRadius.circular(
-    getHorizontalSize(
-      8,
     ),
   );
 

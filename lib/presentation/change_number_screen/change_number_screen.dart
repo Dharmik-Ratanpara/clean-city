@@ -89,6 +89,8 @@ class ChangeNumberScreen extends GetWidget<ChangeNumberController> {
                           margin: getMargin(
                             top: 16,
                           ),
+                          variant: ButtonVariant.FillYellow400,
+                          fontStyle: ButtonFontStyle.UrbanistSemiBold16,
                         ),
                         Container(
                           width: getHorizontalSize(

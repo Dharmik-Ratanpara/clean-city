@@ -4,8 +4,8 @@ import 'package:clean_city/presentation/login_screen/login_screen.dart';
 import 'package:clean_city/presentation/login_screen/binding/login_binding.dart';
 import 'package:clean_city/presentation/otp_screen/otp_screen.dart';
 import 'package:clean_city/presentation/otp_screen/binding/otp_binding.dart';
-import 'package:clean_city/presentation/home_container_screen/home_container_screen.dart';
-import 'package:clean_city/presentation/home_container_screen/binding/home_container_binding.dart';
+import 'package:clean_city/presentation/home_container1_screen/home_container1_screen.dart';
+import 'package:clean_city/presentation/home_container1_screen/binding/home_container1_binding.dart';
 import 'package:clean_city/presentation/change_number_otp_screen/change_number_otp_screen.dart';
 import 'package:clean_city/presentation/change_number_otp_screen/binding/change_number_otp_binding.dart';
 import 'package:clean_city/presentation/change_number_screen/change_number_screen.dart';
@@ -15,17 +15,17 @@ import 'package:clean_city/presentation/app_navigation_screen/binding/app_naviga
 import 'package:get/get.dart';
 
 class AppRoutes {
+  static const String profilePage = '/profile_page';
+
   static const String splashScreen = '/splash_screen';
 
   static const String loginScreen = '/login_screen';
 
   static const String otpScreen = '/otp_screen';
 
-  static const String homePage = '/home_page';
+  static const String homeContainerPage = '/home_container_page';
 
-  static const String homeContainerScreen = '/home_container_screen';
-
-  static const String profilePage = '/profile_page';
+  static const String homeContainer1Screen = '/home_container1_screen';
 
   static const String uploadPage = '/upload_page';
 
@@ -62,10 +62,10 @@ class AppRoutes {
       ],
     ),
     GetPage(
-      name: homeContainerScreen,
-      page: () => HomeContainerScreen(),
+      name: homeContainer1Screen,
+      page: () => HomeContainer1Screen(),
       bindings: [
-        HomeContainerBinding(),
+        HomeContainer1Binding(),
       ],
     ),
     GetPage(

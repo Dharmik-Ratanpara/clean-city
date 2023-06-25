@@ -1,13 +1,13 @@
 import 'package:clean_city/core/app_export.dart';
-import 'package:clean_city/presentation/home_page/models/home_model.dart';
+import 'package:clean_city/presentation/home_container_page/models/home_container_model.dart';
 import 'package:flutter/material.dart';
 
-class HomeController extends GetxController {
-  HomeController(this.homeModelObj);
+class HomeContainerController extends GetxController {
+  HomeContainerController(this.homeContainerModelObj);
 
   TextEditingController searchController = TextEditingController();
 
-  Rx<HomeModel> homeModelObj;
+  Rx<HomeContainerModel> homeContainerModelObj;
 
   @override
   void onReady() {

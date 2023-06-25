@@ -1,7 +1,6 @@
 final Map<String, String> enUs = {
   'msg_network_err': 'Network Error',
   'msg_something_went_wrong': 'Something Went Wrong!',
-  "lbl_profile_one": "Profile One",
   "msg_didnt_received_otp": "Didnt Received OTP?",
   "lbl_enter_area": "Enter Area",
   "lbl_next": "Next",
@@ -52,7 +51,6 @@ final Map<String, String> enUs = {
   "msg_yesterday_5_59_pm": "Yesterday 5:59 pm",
   "lbl_enter_address": "Enter Address",
   "lbl_completed": "Completed",
-  "lbl_profile_two": "Profile Two",
   "lbl_or": "OR",
   "lbl_my_profile": "My Profile",
   "lbl_change_number": "Change Number",
