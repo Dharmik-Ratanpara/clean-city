@@ -67,7 +67,7 @@ class LoginController extends GetxController {
   Future<void> checkUserRegistered() async {
     final currentUser = _auth.currentUser;
     final ref = FirebaseDatabase.instance.ref();
-    final snapshot = await ref.child("students/${currentUser?.uid}").get();
+    final snapshot = await ref.child("users/${currentUser?.uid}").get();
     if (snapshot.exists) {
       isRegistered.value = true;
     } else {
