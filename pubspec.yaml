@@ -7,6 +7,7 @@ dependencies:
   flutter: 
     sdk: flutter
   get: ^4.6.5
+  get_storage: ^2.1.1
   connectivity_plus: ^2.3.6
   shared_preferences: ^2.0.15
   cached_network_image: ^3.2.1
@@ -14,6 +15,11 @@ dependencies:
   flutter_svg_provider: ^1.0.3
   intl: ^0.17.0
   firebase_core: ^2.14.0
+  firebase_auth: ^4.3.0
+  firebase_database: ^10.0.16
+  firebase_storage: ^11.1.0
+  firebase_app_check: ^0.1.2
+
 dev_dependencies: 
   flutter_test: 
     sdk: flutter

@@ -10,7 +10,7 @@ final Map<String, String> enUs = {
       "This will permenently change your mobile number. Next time while login, you have to use new number only.",
   "lbl_home": "Home",
   "msg_select_photo_or": "Select photo or videos \nof unhigeanic place",
-  "msg_enter_your_mobil": "Enter your mobil number",
+  "msg_enter_your_mobil": "Enter your mobile number",
   "lbl_app_navigation": "App Navigation",
   "lbl_enter_otp": "Enter OTP",
   "lbl_resend_in_0_30": "Resend in 0:30",
