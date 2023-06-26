@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "734223310633",
+    "firebase_url": "https://clean-campus-78c4a-default-rtdb.firebaseio.com",
+    "project_id": "clean-campus-78c4a",
+    "storage_bucket": "clean-campus-78c4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734223310633:android:77782dc9da6f8b256de138",
+        "android_client_info": {
+          "package_name": "com.cleancity.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734223310633-kl9s3fqej1do2nm2muamq1pskit7eit8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV-yESZnqkKBNCGlhGbeF8dAXCRupUNUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734223310633-kl9s3fqej1do2nm2muamq1pskit7eit8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "734223310633-abvh8n9706grsp6h28ucj0oqejc5lcb7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cleanCityWorker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734223310633:android:d02d197aabed1a3a6de138",
+        "android_client_info": {
+          "package_name": "com.example.clean_city"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734223310633-nhjglv5a8906qlmvrnq2is730fdp0991.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.clean_city",
+            "certificate_hash": "fb9888d8658f1d2fd38ae0a1f3cf379a7491265f"
+          }
+        },
+        {
+          "client_id": "734223310633-kl9s3fqej1do2nm2muamq1pskit7eit8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV-yESZnqkKBNCGlhGbeF8dAXCRupUNUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734223310633-kl9s3fqej1do2nm2muamq1pskit7eit8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "734223310633-abvh8n9706grsp6h28ucj0oqejc5lcb7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cleanCityWorker"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734223310633:android:699bd93ac6b469ad6de138",
+        "android_client_info": {
+          "package_name": "com.example.clean_city_worker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734223310633-kl9s3fqej1do2nm2muamq1pskit7eit8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV-yESZnqkKBNCGlhGbeF8dAXCRupUNUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734223310633-kl9s3fqej1do2nm2muamq1pskit7eit8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "734223310633-abvh8n9706grsp6h28ucj0oqejc5lcb7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.cleanCityWorker"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
