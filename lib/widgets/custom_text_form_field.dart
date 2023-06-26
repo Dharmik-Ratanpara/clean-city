@@ -240,3 +240,69 @@ enum TextFormFieldFontStyle {
   UrbanistRegular14Gray900,
   UrbanistRomanRegular14,
 }
+
+TextFormField getTextFormField(
+    {TextEditingController? textEditingController,
+    FormFieldValidator<String>? validation,
+    TextInputType? textInputType,
+    Function? ontap,
+    double? size = 52,
+    Widget? suffix,
+    Widget? suffixIcon,
+    bool textVisible = false,
+    double? borderRadius,
+    bool? isFillColor = false,
+    Widget? prefixIcon,
+    // List<TextInputFormatter>? formator,
+    bool isReadOnly = false,
+    Function(String)? onChanged,
+    Color enabledBorder = const Color(0xFFDDDDDD),
+    Color focusedBorder = const Color(0xFFDDDDDD),
+    Color border = const Color(0xFFDDDDDD),
+    bool enable = true,
+    String? hintText,
+    int? maxLine = 1}) {
+  return TextFormField(
+    controller: textEditingController,
+    cursorColor: Colors.black,
+    readOnly: isReadOnly,
+    obscureText: textVisible,
+    enabled: enable,
+    // inputFormatters: formator,
+    validator: validation,
+    onChanged: onChanged,
+    keyboardType: textInputType,
+    maxLines: maxLine,
+    decoration: InputDecoration(
+      filled: isFillColor,
+      fillColor: ColorConstant.gray300.withOpacity(0.2),
+      enabledBorder: OutlineInputBorder(
+        borderSide: BorderSide(color: enabledBorder),
+        borderRadius:
+            BorderRadius.circular((borderRadius == null) ? 10 : borderRadius),
+      ),
+      focusedBorder: OutlineInputBorder(
+        borderRadius:
+            BorderRadius.circular((borderRadius == null) ? 10 : borderRadius),
+        borderSide: BorderSide(color: focusedBorder),
+      ),
+      border: OutlineInputBorder(
+        borderSide: BorderSide(color: border),
+        borderRadius:
+            BorderRadius.circular((borderRadius == null) ? 10 : borderRadius),
+      ),
+      contentPadding: EdgeInsets.only(
+        left: 20,
+        right: 10,
+        bottom: size! / 2, // HERE THE IMPORTANT PART
+      ),
+      prefixIcon: prefixIcon,
+      suffixIcon: suffixIcon,
+      suffix: suffix,
+      hintText: hintText,
+      hintStyle: TextStyle(
+        fontSize: 12,
+      ),
+    ),
+  );
+}
