@@ -11,18 +11,19 @@ class HomeContainer1Screen extends GetWidget<HomeContainer1Controller> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-        child: Scaffold(
-            backgroundColor: ColorConstant.whiteA700,
-            body: Navigator(
-                key: Get.nestedKey(1),
-                initialRoute: AppRoutes.homeContainerPage,
-                onGenerateRoute: (routeSetting) => GetPageRoute(
-                    page: () => getCurrentPage(routeSetting.name!),
-                    transition: Transition.noTransition)),
-            bottomNavigationBar:
-                CustomBottomBar(onChanged: (BottomBarEnum type) {
-              Get.toNamed(getCurrentRoute(type), id: 1);
-            })));
+      child: Scaffold(
+        backgroundColor: ColorConstant.whiteA700,
+        body: Navigator(
+            key: Get.nestedKey(1),
+            initialRoute: AppRoutes.homeContainerPage,
+            onGenerateRoute: (routeSetting) => GetPageRoute(
+                page: () => getCurrentPage(routeSetting.name!),
+                transition: Transition.noTransition)),
+        bottomNavigationBar: CustomBottomBar(onChanged: (BottomBarEnum type) {
+          Get.toNamed(getCurrentRoute(type), id: 1);
+        }),
+      ),
+    );
   }
 
   ///Handling route based on bottom click actions

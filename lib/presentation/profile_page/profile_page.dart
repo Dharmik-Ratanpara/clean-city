@@ -55,7 +55,7 @@ class ProfilePage extends StatelessWidget {
                                                   top: 26,
                                                   bottom: 25),
                                               child: Text(
-                                                  "lbl_91_98765_43210".tr,
+                                                  controller.number.value,
                                                   overflow:
                                                       TextOverflow.ellipsis,
                                                   textAlign: TextAlign.left,
@@ -228,7 +228,7 @@ class ProfilePage extends StatelessWidget {
                                         endIndent: getHorizontalSize(20))),
                                 GestureDetector(
                                     onTap: () {
-                                      onTapRowclock();
+                                      controller.signout();
                                     },
                                     child: Container(
                                         margin: getMargin(
@@ -283,9 +283,4 @@ class ProfilePage extends StatelessWidget {
     );
   }
 
-  onTapRowclock() {
-    Get.toNamed(
-      AppRoutes.loginScreen,
-    );
-  }
 }
